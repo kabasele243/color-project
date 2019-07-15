@@ -6,29 +6,28 @@ import { withStyles } from "@material-ui/styles";
 const styles = {
   root: {
     backgroundColor: "blue",
-    height: "100%",
+    height: "100vh",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center"
   },
-  containers: {
+  container: {
     width: "50%",
     display: "flex",
     alignItems: "flex-start",
-    flexDirections: "column",
+    flexDirection: "column",
     flexWrap: "wrap"
   },
   nav: {
     display: "flex",
     width: "100%",
-    justifyContent: "space-between",
-    color: "white"
+    justifyContent: "space-between"
   },
   palettes: {
     boxSizing: "border-box",
     width: "100%",
     display: "grid",
-    gridTemplateColumn: "repeat(3, 30%)",
+    gridTemplateColumns: "repeat(3, 30%)",
     gridGap: "5%"
   }
 };
@@ -38,7 +37,7 @@ class PaletteList extends Component {
     const { palettes, classes } = this.props;
     return (
       <div className={classes.root}>
-        <div className={classes.containers}>
+        <div className={classes.container}>
           <nav className={classes.nav}>
             <h1>React Colors</h1>
           </nav>
