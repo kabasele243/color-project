@@ -5,7 +5,6 @@ const styles = {
   root: {
     backgroundColor: "white",
     border: "3px solid black",
-    border: "5px",
     padding: "0.5rem",
     overflow: "hidden",
     "&:hover": {
