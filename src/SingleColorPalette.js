@@ -20,7 +20,6 @@ class SingleColorPalette extends Component {
         allColors[key].filter(color => color.id === colorToFilterBy)
       );
     }
-    //return all shades of given color
     return shades.slice(1);
   }
   changeFormat(val) {
@@ -34,7 +33,7 @@ class SingleColorPalette extends Component {
         key={color.name}
         name={color.name}
         background={color[format]}
-        showLink={false}
+        showingFullPalette={false}
       />
     ));
     return (
@@ -42,7 +41,7 @@ class SingleColorPalette extends Component {
         <NavBar handleChange={this.changeFormat} showingAllColors={false} />
         <div className="Palette-colors">
           {colorBoxes}
-          <div className="go-back ColorBox ">
+          <div className="go-back ColorBox">
             <Link to={`/palette/${id}`} className="back-button">
               GO BACK
             </Link>
