@@ -1,3 +1,5 @@
+
+
 export default {
   root: {
     background: "linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);",
@@ -18,11 +20,17 @@ export default {
     width: "100%",
     justifyContent: "space-between"
   },
+  title: {
+    fontSize: "45px",
+    color: "white",
+    alignText: "center"
+  },
   palettes: {
     boxSizing: "border-box",
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "repeat(3, 30%)",
+    gridTemplateColumns: "repeat(3, 35%)",
     gridGap: "5%"
   }
+
 };
