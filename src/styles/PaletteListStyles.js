@@ -1,6 +1,6 @@
 export default {
   root: {
-    backgroundColor: "blue",
+    background: "linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
